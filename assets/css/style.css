@@ -1,0 +1,78 @@
+/*=== abstracts css start === */
+@font-face {
+  font-family: "gotham-bold";
+  src: url(../fonts/gotham/GothamBold.ttf);
+}
+@font-face {
+  font-family: "gotham-medium";
+  src: url(../fonts/gotham/GothamMedium.ttf);
+}
+@font-face {
+  font-family: "gotham-book";
+  src: url(../fonts/gotham/GothamBook.ttf);
+}
+@font-face {
+  font-family: "Rancho";
+  src: url(../fonts/Rancho/Rancho-Regular.ttf);
+}
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "gotham-book";
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50%;
+  }
+}
+/*===// end of base css === */
+/*=== layouts css start === */
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 20px 0;
+}
+.header .container {
+  max-width: 1120px;
+}
+.header .container .telephone {
+  background: #239f7c;
+  color: #fff;
+  border-radius: 35px;
+  padding: 5px;
+}
+
+/*===// end of layouts css === */
+/*=== components css start === */
+.banner {
+  padding-top: 200px;
+  background: url(../images/banner/banner-b.png) no-repeat bottom center/cover;
+}
+
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */
