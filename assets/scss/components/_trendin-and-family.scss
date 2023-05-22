@@ -1,0 +1,42 @@
+.trendin-and-family {
+    padding: 150px 0;
+    background: url(../images/tren-family/b22.png);
+
+    .text {
+        h2 {
+            font-family: "Rancho";
+            font-size: 90px;
+            line-height: 90px;
+            color: #4a3e3b;
+            padding-bottom: 45px;
+            position: relative;
+            z-index: 3;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 20px;
+                left: -20px;
+                height: 100px;
+                width: 100%;
+                background: url(../images/before.png) no-repeat;
+                z-index: -1;
+            }
+        }
+
+        p {
+            color: #7b7472;
+            font-size: 24px;
+            padding-bottom: 90px;
+        }
+
+        a {
+            background: #24a07d;
+            color: #fff;
+            font-size: 27px;
+            font-family: "gotham-bold";
+            padding: 6px 10px;
+            border-radius: 20px;
+        }
+    }
+}

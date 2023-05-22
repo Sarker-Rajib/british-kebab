@@ -1,0 +1,59 @@
+.mini-showcase {
+    padding: 160px 0;
+
+    @media(max-width: 991px) {
+        padding: 100px 0;
+    }
+
+    @media(max-width: 767px) {
+        padding: 50px 0;
+    }
+
+    .swiper {
+        padding: 0 20px;
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+                padding: 20px;
+
+                .carousel-card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 175px;
+
+                    @media(max-width: 767px) {
+                        height: 100px;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+
+                    &:hover {
+                        box-shadow: 0px 0px 5px #000000be;
+                    }
+                }
+            }
+        }
+
+        .swiper-button-prev {
+            &::after {
+                color: #de702a;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+
+        .swiper-button-next {
+            &::after {
+                color: #de702a;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+
+
+    }
+}
