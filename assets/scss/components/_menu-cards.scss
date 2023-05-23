@@ -1,9 +1,27 @@
-.trendin-and-family {
-    padding: 150px 0;
-    background: url(../images/tren-family/b22.png) no-repeat top left/cover;
+.menu-cards {
+    padding: 150px 0 120px;
+    background: #fdc493;
 
     @media(max-width: 767px) {
-        padding: 120px 0 80px;
+        padding: 100px 0 80px;
+    }
+
+    .container {
+        max-width: 1220px;
+    }
+
+    .image {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+
+        .img2 {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            z-index: -1;
+        }
     }
 
     .text {
@@ -12,7 +30,7 @@
             font-size: 90px;
             line-height: 90px;
             color: #4a3e3b;
-            padding-bottom: 45px;
+            padding-bottom: 40px;
             position: relative;
             z-index: 3;
 
@@ -36,7 +54,11 @@
         .details {
             color: #7b7472;
             font-size: 24px;
-            padding-bottom: 90px;
+            padding-bottom: 60px;
+
+            @media(min-width: 1200px) {
+                white-space: pre-line;
+            }
 
             @media(max-width: 767px) {
                 font-size: 20px;

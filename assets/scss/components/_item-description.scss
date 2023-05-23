@@ -1,4 +1,101 @@
 .item-description {
-    padding: 150px 0;
-    background: url(../images/item-details/b-main-item.png);
+    padding: 170px 0 120px;
+    background: url(../images/item-details/b-main-item.png) no-repeat top left/cover;
+
+    @media(max-width: 767px) {
+        padding: 120px 0 80px;
+    }
+
+    .container {
+        @media(min-width: 1700px) {
+            max-width: 1680px;
+        }
+    }
+
+    .swiper {
+        .wrapper {
+            padding: 0 50px;
+            max-width: 1220px;
+            margin: auto;
+
+            .text {
+                .top {
+                    padding-bottom: 80px;
+
+                    .title {
+                        display: inline-block;
+                        font-family: "Rancho";
+                        font-size: 90px;
+                        line-height: 90px;
+                        color: #4a3e3b;
+                        position: relative;
+                        z-index: 3;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 20px;
+                            left: -20px;
+                            height: 100px;
+                            width: 100%;
+                            background: url(../images/before.png) no-repeat;
+                            z-index: -1;
+                        }
+                    }
+
+                    .sub-des {
+                        font-size: 32px;
+                        color: #7b7472;
+                    }
+                }
+
+                .descriptioon {
+                    padding-bottom: 100px;
+
+                    .ingred {
+                        font-size: 28px;
+                        font-family: "gotham-medium";
+                        color: #4a3e3b;
+                    }
+
+                    .measure {
+                        font-size: 22px;
+                    }
+                }
+
+                .order-btn {
+                    background: #24a07d;
+                    color: #fff;
+                    font-size: 27px;
+                    font-family: "gotham-bold";
+                    padding: 6px 10px;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+        .swiper-button-prev {
+            background: #239f7c;
+            width: 44px;
+            border-radius: 50%;
+
+            &::after {
+                color: #fff;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+
+        .swiper-button-next {
+            background: #239f7c;
+            width: 44px;
+            border-radius: 50%;
+
+            &::after {
+                color: #fff;
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+    }
 }

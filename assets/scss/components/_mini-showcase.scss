@@ -29,6 +29,11 @@
 
                     img {
                         max-width: 100%;
+                        max-width: 100px;
+
+                        @media(max-width: 767px) {
+                            max-width: 80px;
+                        }
                     }
 
                     &:hover {
@@ -53,7 +58,5 @@
                 font-weight: bold;
             }
         }
-
-
     }
 }

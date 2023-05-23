@@ -32,7 +32,6 @@ var swiper = new Swiper(".mini-menu", {
 //  logo slider
 var swiper = new Swiper(".item-ddetails", {
     slidesPerView: 1,
-    spaceBetween: 30,
     // freeMode: true,
     loop: true,
     // centeredSlides: true,
@@ -43,6 +42,5 @@ var swiper = new Swiper(".item-ddetails", {
     pagination: {
         // el: ".swiper-pagination",
         clickable: true,
-
     }
 });

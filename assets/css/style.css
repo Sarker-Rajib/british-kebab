@@ -54,8 +54,6 @@ body {
 /*===// end of base css === */
 /*=== layouts css start === */
 .header {
-  position: absolute;
-  width: 100%;
   padding: 20px 0;
 }
 .header .container {
@@ -71,6 +69,72 @@ body {
   color: #fff;
   border-radius: 35px;
   padding: 5px;
+}
+
+.footer {
+  margin-top: -200px;
+  padding: 200px 0 100px;
+  background: url(../images/footer/footer-bg.png) no-repeat top left/cover;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 200px 0 50px;
+    background: url(../images/footer/bg-2-footer.png) no-repeat top left/cover;
+  }
+}
+.footer .container {
+  max-width: 1200px;
+}
+.footer .container .detail {
+  color: #fff;
+  font-size: 15px;
+  padding: 20px 0 30px;
+}
+.footer .container .social-links {
+  display: flex;
+  align-items: center;
+}
+.footer .container .social-links .s-link {
+  background: rgba(0, 0, 0, 0);
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.footer .container .social-links .s-link:hover {
+  background: #f36f2c;
+}
+.footer .container .heading {
+  font-family: "gotham-bold";
+  font-size: 32px;
+  color: #fff;
+  padding-bottom: 35px;
+}
+@media (max-width: 767px) {
+  .footer .container .heading {
+    font-size: 25px;
+    padding-bottom: 20px;
+  }
+}
+.footer .container .link,
+.footer .container .detl-add {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .footer .container .link,
+  .footer .container .detl-add {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+}
+.footer .container .link:hover {
+  color: #f36f2c;
+  transform: translateX(10px);
+  transition: all 0.2s ease-in-out;
 }
 
 /*===// end of layouts css === */
@@ -112,6 +176,12 @@ body {
 }
 .mini-showcase .swiper .swiper-wrapper .swiper-slide .carousel-card img {
   max-width: 100%;
+  max-width: 100px;
+}
+@media (max-width: 767px) {
+  .mini-showcase .swiper .swiper-wrapper .swiper-slide .carousel-card img {
+    max-width: 80px;
+  }
 }
 .mini-showcase .swiper .swiper-wrapper .swiper-slide .carousel-card:hover {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7450980392);
@@ -129,9 +199,14 @@ body {
 
 .trendin-and-family {
   padding: 150px 0;
-  background: url(../images/tren-family/b22.png);
+  background: url(../images/tren-family/b22.png) no-repeat top left/cover;
 }
-.trendin-and-family .text h2 {
+@media (max-width: 767px) {
+  .trendin-and-family {
+    padding: 120px 0 80px;
+  }
+}
+.trendin-and-family .text .heading {
   font-family: "Rancho";
   font-size: 90px;
   line-height: 90px;
@@ -140,7 +215,7 @@ body {
   position: relative;
   z-index: 3;
 }
-.trendin-and-family .text h2::before {
+.trendin-and-family .text .heading::before {
   content: "";
   position: absolute;
   top: 20px;
@@ -150,12 +225,24 @@ body {
   background: url(../images/before.png) no-repeat;
   z-index: -1;
 }
-.trendin-and-family .text p {
+@media (max-width: 767px) {
+  .trendin-and-family .text .heading {
+    font-size: 70px;
+    padding-bottom: 35px;
+  }
+}
+.trendin-and-family .text .details {
   color: #7b7472;
   font-size: 24px;
   padding-bottom: 90px;
 }
-.trendin-and-family .text a {
+@media (max-width: 767px) {
+  .trendin-and-family .text .details {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+}
+.trendin-and-family .text .more-btn {
   background: #24a07d;
   color: #fff;
   font-size: 27px;
@@ -165,8 +252,226 @@ body {
 }
 
 .item-description {
-  padding: 150px 0;
-  background: url(../images/item-details/b-main-item.png);
+  padding: 170px 0 120px;
+  background: url(../images/item-details/b-main-item.png) no-repeat top left/cover;
+}
+@media (max-width: 767px) {
+  .item-description {
+    padding: 120px 0 80px;
+  }
+}
+@media (min-width: 1700px) {
+  .item-description .container {
+    max-width: 1680px;
+  }
+}
+.item-description .swiper .wrapper {
+  padding: 0 50px;
+  max-width: 1220px;
+  margin: auto;
+}
+.item-description .swiper .wrapper .text .top {
+  padding-bottom: 80px;
+}
+.item-description .swiper .wrapper .text .top .title {
+  display: inline-block;
+  font-family: "Rancho";
+  font-size: 90px;
+  line-height: 90px;
+  color: #4a3e3b;
+  position: relative;
+  z-index: 3;
+}
+.item-description .swiper .wrapper .text .top .title::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  height: 100px;
+  width: 100%;
+  background: url(../images/before.png) no-repeat;
+  z-index: -1;
+}
+.item-description .swiper .wrapper .text .top .sub-des {
+  font-size: 32px;
+  color: #7b7472;
+}
+.item-description .swiper .wrapper .text .descriptioon {
+  padding-bottom: 100px;
+}
+.item-description .swiper .wrapper .text .descriptioon .ingred {
+  font-size: 28px;
+  font-family: "gotham-medium";
+  color: #4a3e3b;
+}
+.item-description .swiper .wrapper .text .descriptioon .measure {
+  font-size: 22px;
+}
+.item-description .swiper .wrapper .text .order-btn {
+  background: #24a07d;
+  color: #fff;
+  font-size: 27px;
+  font-family: "gotham-bold";
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+.item-description .swiper .swiper-button-prev {
+  background: #239f7c;
+  width: 44px;
+  border-radius: 50%;
+}
+.item-description .swiper .swiper-button-prev::after {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+.item-description .swiper .swiper-button-next {
+  background: #239f7c;
+  width: 44px;
+  border-radius: 50%;
+}
+.item-description .swiper .swiper-button-next::after {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu-cards {
+  padding: 150px 0 120px;
+  background: #fdc493;
+}
+@media (max-width: 767px) {
+  .menu-cards {
+    padding: 100px 0 80px;
+  }
+}
+.menu-cards .container {
+  max-width: 1220px;
+}
+.menu-cards .image {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.menu-cards .image .img2 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.menu-cards .text .heading {
+  font-family: "Rancho";
+  font-size: 90px;
+  line-height: 90px;
+  color: #4a3e3b;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 3;
+}
+.menu-cards .text .heading::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  height: 100px;
+  width: 100%;
+  background: url(../images/before.png) no-repeat;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .menu-cards .text .heading {
+    font-size: 70px;
+    padding-bottom: 35px;
+  }
+}
+.menu-cards .text .details {
+  color: #7b7472;
+  font-size: 24px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .menu-cards .text .details {
+    white-space: pre-line;
+  }
+}
+@media (max-width: 767px) {
+  .menu-cards .text .details {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+}
+.menu-cards .text .more-btn {
+  background: #24a07d;
+  color: #fff;
+  font-size: 27px;
+  font-family: "gotham-bold";
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.special-menu {
+  background: url(../images/special-menu/bg-special.png) no-repeat top left/cover;
+  padding: 200px 0 400px;
+}
+@media (max-width: 767px) {
+  .special-menu {
+    padding: 120px 0 100px;
+  }
+}
+@media (min-width: 1300px) {
+  .special-menu .container {
+    max-width: 1220px;
+  }
+}
+.special-menu .text .heading {
+  font-family: "Rancho";
+  font-size: 90px;
+  line-height: 90px;
+  color: #4a3e3b;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 3;
+}
+.special-menu .text .heading::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  height: 100px;
+  width: 100%;
+  background: url(../images/before.png) no-repeat;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .special-menu .text .heading {
+    font-size: 70px;
+    padding-bottom: 35px;
+  }
+}
+.special-menu .text .details {
+  color: #7b7472;
+  font-size: 24px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .special-menu .text .details {
+    white-space: pre-line;
+  }
+}
+@media (max-width: 767px) {
+  .special-menu .text .details {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+}
+.special-menu .text .more-btn {
+  background: #24a07d;
+  color: #fff;
+  font-size: 27px;
+  font-family: "gotham-bold";
+  padding: 6px 10px;
+  border-radius: 20px;
 }
 
 /*===// end of components css === *//*# sourceMappingURL=style.css.map */
