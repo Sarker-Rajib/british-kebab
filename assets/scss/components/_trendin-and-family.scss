@@ -53,4 +53,20 @@
             border-radius: 20px;
         }
     }
+
+    .image {
+        .image-one {
+            position: absolute;
+            width: 45%;
+            top: 8%;
+            right: 0;
+        }
+
+        .image-two {
+            position: absolute;
+            width: 35%;
+            bottom: 8%;
+            left: 0;
+        }
+    }
 }

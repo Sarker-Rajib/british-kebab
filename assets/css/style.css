@@ -250,6 +250,18 @@ body {
   padding: 6px 10px;
   border-radius: 20px;
 }
+.trendin-and-family .image .image-one {
+  position: absolute;
+  width: 45%;
+  top: 8%;
+  right: 0;
+}
+.trendin-and-family .image .image-two {
+  position: absolute;
+  width: 35%;
+  bottom: 8%;
+  left: 0;
+}
 
 .item-description {
   padding: 170px 0 120px;
