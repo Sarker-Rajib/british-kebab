@@ -1,0 +1,133 @@
+.visit-out-resturant {
+    background: #e8e2d9;
+    position: relative;
+
+    .container {
+        @media(min-width: 1400px) {
+            max-width: 1160px;
+        }
+    }
+
+    .topper {
+        position: absolute;
+        width: 100%;
+        top: -60px;
+
+        @media(max-width: 767px) {
+            position: relative;
+        }
+
+        .con-card {
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 6.364px 6.364px 15px 0px #24242459;
+            padding: 30px 20px;
+            align-items: center;
+            height: 100%;
+
+            .text {
+                padding-left: 20px;
+
+                .title {
+                    color: #4a3e3b;
+                    font-size: 30px;
+                    padding-bottom: 10px;
+                }
+
+                .contact {
+                    color: #7b7472;
+                }
+            }
+        }
+    }
+
+    .inner-sec {
+        padding-top: 220px;
+        padding-bottom: 90px;
+
+        @media(max-width: 767px) {
+            padding-top: 40px;
+        }
+
+        .text {
+            .heading {
+                font-family: "Rancho";
+                font-size: 90px;
+                line-height: 90px;
+                color: #4a3e3b;
+                padding-bottom: 40px;
+                position: relative;
+                z-index: 3;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 20px;
+                    left: -20px;
+                    height: 100px;
+                    width: 100%;
+                    background: url(../images/before.png) no-repeat;
+                    z-index: -1;
+                }
+
+                @media(max-width: 767px) {
+                    font-size: 70px;
+                    padding-bottom: 35px;
+                }
+            }
+
+            .details {
+                color: #7b7472;
+                font-size: 20px;
+                padding-bottom: 60px;
+
+                @media(max-width: 767px) {
+                    font-size: 20px;
+                    padding-bottom: 25px;
+                }
+            }
+
+            .more-btn {
+                background: #24a07d;
+                color: #fff;
+                font-size: 27px;
+                font-family: "gotham-bold";
+                padding: 6px 10px;
+                border-radius: 20px;
+            }
+        }
+
+        .shedule {
+            border-radius: 40px;
+            background-color: rgb(35, 159, 124);
+            box-shadow: 6.364px 6.364px 15px 0px rgba(36, 36, 36, 0.35);
+            text-align: center;
+            padding: 50px 0 30px;
+            position: relative;
+
+            .head {
+                background-color: rgb(248, 153, 51);
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -26px;
+                border-radius: 30px;
+                padding: 5px 30px;
+                font-size: 25px;
+                font-family: "gotham-bold";
+            }
+
+
+            .day {
+                font-family: "gotham-medium";
+                font-size: 35px;
+                color: #fff;
+            }
+
+            .time {
+                font-size: 25px;
+                color: #fff;
+            }
+        }
+    }
+}

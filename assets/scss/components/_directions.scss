@@ -1,0 +1,153 @@
+.directions {
+    padding: 90px 0 280px;
+
+    @media(max-width: 767px) {
+        padding: 90px 0 150px;
+    }
+
+    .container {
+        @media(min-width: 1400px) {
+            max-width: 1160px;
+        }
+
+        .card-template {
+            padding: 45px;
+            border-radius: 40px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 6.364px 6.364px 15px 0px #00000059;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -210px;
+            max-width: 420px;
+
+            @media(max-width: 1199px) {
+                right: -140px;
+            }
+
+            .title {
+                font-family: "Rancho";
+                font-size: 100px;
+                line-height: 90px;
+                color: #4a3e3b;
+                padding-bottom: 70px;
+                position: relative;
+                z-index: 3;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 20px;
+                    left: -20px;
+                    height: 100px;
+                    width: 100%;
+                    background: url(../images/before.png) no-repeat;
+                    z-index: -1;
+                }
+
+                @media(max-width: 767px) {
+                    font-size: 70px;
+                    padding-bottom: 35px;
+                }
+            }
+
+            .subtitle {
+                color: #4a3e3b;
+                font-size: 24px;
+                padding-bottom: 50px;
+
+                @media(max-width: 767px) {
+                    font-size: 20px;
+                    padding-bottom: 25px;
+                }
+            }
+
+            .para {
+                color: #7b7472;
+                font-size: 18px;
+                padding-bottom: 50px;
+            }
+
+            .btn-contact {
+                background-color: #239f7c;
+                border-radius: 30px;
+                color: #ffffff;
+                font-family: "gotham-medium";
+                font-size: 22px;
+                padding: 15px;
+
+
+                @media(max-width: 767px) {
+                    padding: 5px;
+                }
+            }
+
+        }
+
+        .card-template2 {
+            padding: 45px;
+            border-radius: 40px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 6.364px 6.364px 15px 0px #00000059;
+
+            .title {
+                font-family: "Rancho";
+                font-size: 100px;
+                line-height: 90px;
+                color: #4a3e3b;
+                padding-bottom: 70px;
+                position: relative;
+                z-index: 3;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 20px;
+                    left: -20px;
+                    height: 100px;
+                    width: 100%;
+                    background: url(../images/before.png) no-repeat;
+                    z-index: -1;
+                }
+
+                @media(max-width: 767px) {
+                    font-size: 70px;
+                    padding-bottom: 35px;
+                }
+            }
+
+            .subtitle {
+                color: #4a3e3b;
+                font-size: 24px;
+                padding-bottom: 50px;
+
+                @media(max-width: 767px) {
+                    font-size: 20px;
+                    padding-bottom: 25px;
+                }
+            }
+
+            .para {
+                color: #7b7472;
+                font-size: 18px;
+                padding-bottom: 50px;
+            }
+
+            .btn-contact {
+                background-color: #239f7c;
+                border-radius: 30px;
+                color: #ffffff;
+                font-family: "gotham-medium";
+                font-size: 22px;
+                padding: 15px;
+
+
+                @media(max-width: 767px) {
+                    padding: 5px;
+                }
+            }
+
+        }
+    }
+
+}
