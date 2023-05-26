@@ -2,6 +2,11 @@
     padding-top: 200px;
     padding-bottom: 400px;
 
+    @media(max-width: 767px) {
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+
     .container {
         @media(min-width: 1650px) {
             max-width: 1620px;
@@ -11,6 +16,13 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 200px;
+            overflow: hidden;
+
+            @media(max-width: 991px) {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
 
             .top {
                 margin-bottom: 45px;
@@ -61,6 +73,10 @@
                     @media(min-width: 1200px) {
                         white-space: pre-line;
                     }
+
+                    @media(max-width: 991px) {
+                        font-size: 18px;
+                    }
                 }
             }
 
@@ -72,12 +88,22 @@
                         font-family: "gotham-medium";
                         font-size: 20px;
                         color: #4a3e3b;
+
+
+                        @media(max-width: 991px) {
+                            font-size: 16px;
+                        }
                     }
 
                     .comp {
                         color: #c8c3c3;
                         font-family: "gotham-light";
                         font-size: 16px;
+
+
+                        @media(max-width: 991px) {
+                            font-size: 12px;
+                        }
                     }
                 }
             }
@@ -97,6 +123,10 @@
                         font-family: "gotham-medium";
                         font-size: 22px;
                         color: #4a3e3b;
+
+                        @media(max-width: 991px) {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -112,6 +142,10 @@
                         font-family: "gotham-medium";
                         font-size: 22px;
                         color: #4a3e3b;
+
+                        @media(max-width: 991px) {
+                            font-size: 16px;
+                        }
                     }
                 }
             }

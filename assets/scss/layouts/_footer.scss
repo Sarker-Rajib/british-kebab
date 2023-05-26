@@ -8,6 +8,12 @@
         background: url(../images/footer/bg-2-footer.png) no-repeat top left/cover;
     }
 
+    @media(max-width: 991px) {
+        background: url(../images/footer/bg-2-footer.png) no-repeat top center/cover;
+        margin-top: -250px;
+    }
+
+
     .container {
         max-width: 1200px;
 

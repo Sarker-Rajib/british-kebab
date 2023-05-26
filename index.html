@@ -17,13 +17,26 @@
   <!-- all codes for ===***header***=== starts from here -->
   <header class="header fixed-top" id="header">
     <div class="container">
-      <div class="d-flex align-items-center justify-content-between">
-        <a class="telephone d-none d-md-flex" href="tel:+91 96354 25496">
-          <span class="d-flex align-items-center"><img src="assets/images/header/phone.png" alt=""><span>+91 96354
-              25496</span></span>
-        </a>
-        <img class="img-fluid b-logo" id="logooo" src="assets/images/header/brand-loggo.png" alt="brand-loggo ">
-        <button class="btn"><img src="assets/images/header/aa.png" alt="aa"></button>
+      <div class="position-relative">
+        <div class="d-flex align-items-center justify-content-between">
+          <a class="telephone" href="tel:+91 96354 25496">
+            <span class="d-flex align-items-center"><img src="assets/images/header/phone.png" alt=""><span>+91 96354
+                25496</span></span>
+          </a>
+          <img class="img-fluid b-logo" id="logooo" src="assets/images/header/brand-loggo.png" alt="brand-loggo ">
+          <button class="btn s-btn" id="navToggler"><img src="assets/images/header/aa.png" alt="aa"></button>
+        </div>
+        <div class="nav-menu nav-menu-hidden" id="navMenu">
+          <ul class="navig">
+            <li><a class="navig-anchor" href="index.html">Home</a></li>
+            <li><a class="navig-anchor" href="#">About</a></li>
+            <li><a class="navig-anchor" href="menu.html">Menu</a></li>
+            <li><a class="navig-anchor" href="#">Reservation</a></li>
+            <li><a class="navig-anchor" href="#">Offers</a></li>
+            <li><a class="navig-anchor" href="#">OrderOnline</a></li>
+            <li><a class="navig-anchor" href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -123,7 +136,7 @@
                 alt="q"></a>
           </div>
         </div>
-        <div class="col-md-6 px-5">
+        <div class="col-md-6 px-1 px-xl-5">
           <div class="image px-5 position-relative">
             <img src="assets/images/tren-family/q3.png" alt="ok" class="img-fluid" data-aos="zoom-in-left"
               data-aos-offset="0" data-aos-delay="10" data-aos-duration="300" data-aos-easing="ease-in-out"
@@ -154,7 +167,7 @@
           <div class="swiper-slide">
             <div class="wrapper">
               <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 px-5 px-md-2">
                   <div class="image text-center">
                     <img src="assets/images/Quantity-description/tort-1.png" alt="q" class="img-fluid">
                   </div>
@@ -352,6 +365,23 @@
     AOS.init();
   </script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("header").style.background = "rgb(0 0 0 / 25%)";
+        document.getElementById("header").style.backdropFilter = "blur(15px)";
+        document.getElementById("logooo").style.width = "100px";
+      } else {
+        document.getElementById("header").style.background = "none";
+        document.getElementById("header").style.backdropFilter = "none";
+        document.getElementById("logooo").style.width = "auto";
+      }
+    }
+
+  </script>
   <!-- .........script ended............. -->
 </body>
 

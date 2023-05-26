@@ -65,14 +65,87 @@ body {
 }
 @media (max-width: 767px) {
   .header .container .b-logo {
-    max-width: 200px;
+    max-width: 90px;
   }
 }
 .header .container .telephone {
   background: #239f7c;
   color: #fff;
   border-radius: 35px;
-  padding: 5px;
+  padding: 5px 10px;
+}
+.header .container .telephone:hover {
+  background: #c97414;
+  transition: all 0.3s;
+}
+@media (max-width: 767px) {
+  .header .container .telephone {
+    font-size: 12px;
+  }
+}
+.header .container .s-btn {
+  margin-left: 10px;
+}
+.header .container .s-btn.social {
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  justify-content: center;
+}
+.header .container .s-btn:hover {
+  background: #c97414;
+}
+.header .container .s-btn:hover.social img {
+  transform: scale(1.1);
+}
+.header .container .nav-menu {
+  position: absolute;
+  background: #ffffff;
+  left: 0;
+  top: calc(100% + 10px);
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px 0;
+  transition: all 0.3s;
+}
+.header .container .nav-menu-hidden {
+  display: none;
+  transition: all 0.3s;
+}
+.header .container .nav-menu-show {
+  display: block;
+  transition: all 0.3s;
+}
+.header .container .navig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+@media (max-width: 991px) {
+  .header .container .navig {
+    flex-direction: column;
+  }
+}
+.header .container .navig .navig-anchor {
+  font-family: "gotham-bold";
+  font-size: 17px;
+  margin: 0 15px;
+  padding: 5px 15px;
+  color: #4a3e3b;
+  display: inline-block;
+}
+.header .container .navig .navig-anchor:hover {
+  background: #c97414;
+  color: #fff;
+  border-radius: 10px;
+}
+@media (max-width: 991px) {
+  .header .container .navig .navig-anchor {
+    padding: 2px 10px;
+  }
 }
 
 .footer {
@@ -84,6 +157,12 @@ body {
   .footer {
     padding: 200px 0 50px;
     background: url(../images/footer/bg-2-footer.png) no-repeat top left/cover;
+  }
+}
+@media (max-width: 991px) {
+  .footer {
+    background: url(../images/footer/bg-2-footer.png) no-repeat top center/cover;
+    margin-top: -250px;
   }
 }
 .footer .container {
@@ -211,7 +290,7 @@ body {
 }
 
 .mini-showcase {
-  padding: 160px 0;
+  padding: 100px 0;
 }
 @media (max-width: 991px) {
   .mini-showcase {
@@ -251,6 +330,12 @@ body {
 }
 .mini-showcase .swiper .swiper-wrapper .swiper-slide .carousel-card:hover {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7450980392);
+  background: rgba(238, 170, 124, 0.6588235294);
+  transition: all 0.3s;
+}
+.mini-showcase .swiper .swiper-wrapper .swiper-slide .carousel-card:hover img {
+  transition: all 0.3s;
+  transform: scale(1.3);
 }
 .mini-showcase .swiper .swiper-button-prev::after {
   color: #de702a;
@@ -291,9 +376,10 @@ body {
   background: url(../images/before.png) no-repeat;
   z-index: -1;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .trendin-and-family .text .heading {
-    font-size: 70px;
+    font-size: 60px;
+    line-height: 1.2;
     padding-bottom: 35px;
   }
 }
@@ -302,9 +388,9 @@ body {
   font-size: 24px;
   padding-bottom: 90px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .trendin-and-family .text .details {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 25px;
   }
 }
@@ -313,8 +399,18 @@ body {
   color: #fff;
   font-size: 27px;
   font-family: "gotham-bold";
-  padding: 6px 10px;
+  padding: 3px 15px;
   border-radius: 20px;
+  display: inline-block;
+}
+.trendin-and-family .text .more-btn:hover {
+  transform: scale(1.02);
+  background: #000;
+}
+@media (max-width: 991px) {
+  .trendin-and-family .text .more-btn {
+    font-size: 25px;
+  }
 }
 .trendin-and-family .image .image-one {
   position: absolute;
@@ -348,8 +444,24 @@ body {
   max-width: 1220px;
   margin: auto;
 }
+.item-description .swiper .wrapper .image img {
+  transition: all 0.4s;
+}
+.item-description .swiper .wrapper .image img:hover {
+  transform: scale(1.2) rotate(30deg);
+}
 .item-description .swiper .wrapper .text .top {
   padding-bottom: 80px;
+}
+@media (max-width: 991px) {
+  .item-description .swiper .wrapper .text .top {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .item-description .swiper .wrapper .text .top {
+    padding-bottom: 30px;
+  }
 }
 .item-description .swiper .wrapper .text .top .title {
   display: inline-block;
@@ -370,28 +482,86 @@ body {
   background: url(../images/before.png) no-repeat;
   z-index: -1;
 }
+@media (max-width: 991px) {
+  .item-description .swiper .wrapper .text .top .title {
+    font-size: 70px;
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .item-description .swiper .wrapper .text .top .title {
+    font-size: 60px;
+    padding-bottom: 15px;
+  }
+}
 .item-description .swiper .wrapper .text .top .sub-des {
   font-size: 32px;
   color: #7b7472;
 }
+@media (max-width: 991px) {
+  .item-description .swiper .wrapper .text .top .sub-des {
+    font-size: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .item-description .swiper .wrapper .text .top .sub-des {
+    font-size: 20px;
+  }
+}
 .item-description .swiper .wrapper .text .descriptioon {
   padding-bottom: 100px;
+}
+@media (max-width: 991px) {
+  .item-description .swiper .wrapper .text .descriptioon {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .item-description .swiper .wrapper .text .descriptioon {
+    padding-bottom: 20px;
+  }
 }
 .item-description .swiper .wrapper .text .descriptioon .ingred {
   font-size: 28px;
   font-family: "gotham-medium";
   color: #4a3e3b;
 }
+@media (max-width: 991px) {
+  .item-description .swiper .wrapper .text .descriptioon .ingred {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .item-description .swiper .wrapper .text .descriptioon .ingred {
+    font-size: 18px;
+  }
+}
 .item-description .swiper .wrapper .text .descriptioon .measure {
   font-size: 22px;
+}
+@media (max-width: 991px) {
+  .item-description .swiper .wrapper .text .descriptioon .measure {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .item-description .swiper .wrapper .text .descriptioon .measure {
+    font-size: 15px;
+  }
 }
 .item-description .swiper .wrapper .text .order-btn {
   background: #24a07d;
   color: #fff;
   font-size: 27px;
   font-family: "gotham-bold";
-  padding: 6px 10px;
   border-radius: 20px;
+  display: inline-block;
+  padding: 3px 15px;
+  margin-bottom: 10px;
+}
+.item-description .swiper .wrapper .text .order-btn:hover {
+  transform: scale(1.02);
+  background: #000;
 }
 .item-description .swiper .swiper-button-prev {
   background: #239f7c;
@@ -443,7 +613,7 @@ body {
   font-size: 90px;
   line-height: 90px;
   color: #4a3e3b;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   position: relative;
   z-index: 3;
 }
@@ -457,25 +627,21 @@ body {
   background: url(../images/before.png) no-repeat;
   z-index: -1;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .menu-cards .text .heading {
-    font-size: 70px;
+    font-size: 60px;
+    line-height: 1.2;
     padding-bottom: 35px;
   }
 }
 .menu-cards .text .details {
   color: #7b7472;
   font-size: 24px;
-  padding-bottom: 60px;
+  padding-bottom: 90px;
 }
-@media (min-width: 1200px) {
+@media (max-width: 991px) {
   .menu-cards .text .details {
-    white-space: pre-line;
-  }
-}
-@media (max-width: 767px) {
-  .menu-cards .text .details {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 25px;
   }
 }
@@ -484,13 +650,28 @@ body {
   color: #fff;
   font-size: 27px;
   font-family: "gotham-bold";
-  padding: 6px 10px;
+  padding: 3px 15px;
   border-radius: 20px;
+  display: inline-block;
+}
+.menu-cards .text .more-btn:hover {
+  transform: scale(1.02);
+  background: #000;
+}
+@media (max-width: 991px) {
+  .menu-cards .text .more-btn {
+    font-size: 25px;
+  }
 }
 
 .special-menu {
   background: url(../images/special-menu/bg-special.png) no-repeat top left/cover;
   padding: 200px 0 400px;
+}
+@media (max-width: 991px) {
+  .special-menu {
+    padding: 120px 0 240px;
+  }
 }
 @media (max-width: 767px) {
   .special-menu {
@@ -507,7 +688,7 @@ body {
   font-size: 90px;
   line-height: 90px;
   color: #4a3e3b;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   position: relative;
   z-index: 3;
 }
@@ -521,25 +702,21 @@ body {
   background: url(../images/before.png) no-repeat;
   z-index: -1;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .special-menu .text .heading {
-    font-size: 70px;
+    font-size: 60px;
+    line-height: 1.2;
     padding-bottom: 35px;
   }
 }
 .special-menu .text .details {
   color: #7b7472;
   font-size: 24px;
-  padding-bottom: 60px;
+  padding-bottom: 90px;
 }
-@media (min-width: 1200px) {
+@media (max-width: 991px) {
   .special-menu .text .details {
-    white-space: pre-line;
-  }
-}
-@media (max-width: 767px) {
-  .special-menu .text .details {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 25px;
   }
 }
@@ -548,8 +725,18 @@ body {
   color: #fff;
   font-size: 27px;
   font-family: "gotham-bold";
-  padding: 6px 10px;
+  padding: 3px 15px;
   border-radius: 20px;
+  display: inline-block;
+}
+.special-menu .text .more-btn:hover {
+  transform: scale(1.02);
+  background: #000;
+}
+@media (max-width: 991px) {
+  .special-menu .text .more-btn {
+    font-size: 25px;
+  }
 }
 
 .get-in-touch {
@@ -637,16 +824,40 @@ body {
   align-items: center;
   height: 100%;
 }
+@media (max-width: 991px) {
+  .visit-out-resturant .topper .con-card {
+    padding: 20px 10px;
+  }
+  .visit-out-resturant .topper .con-card img {
+    max-width: 30px;
+  }
+}
 .visit-out-resturant .topper .con-card .text {
   padding-left: 20px;
+}
+@media (max-width: 767px) {
+  .visit-out-resturant .topper .con-card .text {
+    padding-left: 10px;
+  }
 }
 .visit-out-resturant .topper .con-card .text .title {
   color: #4a3e3b;
   font-size: 30px;
   padding-bottom: 10px;
 }
+@media (max-width: 767px) {
+  .visit-out-resturant .topper .con-card .text .title {
+    font-size: 20px;
+  }
+}
 .visit-out-resturant .topper .con-card .text .contact {
   color: #7b7472;
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .visit-out-resturant .topper .con-card .text .contact {
+    font-size: 14px;
+  }
 }
 .visit-out-resturant .inner-sec {
   padding-top: 220px;
@@ -662,7 +873,7 @@ body {
   font-size: 90px;
   line-height: 90px;
   color: #4a3e3b;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   position: relative;
   z-index: 3;
 }
@@ -676,20 +887,21 @@ body {
   background: url(../images/before.png) no-repeat;
   z-index: -1;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .visit-out-resturant .inner-sec .text .heading {
-    font-size: 70px;
+    font-size: 60px;
+    line-height: 1.2;
     padding-bottom: 35px;
   }
 }
 .visit-out-resturant .inner-sec .text .details {
   color: #7b7472;
-  font-size: 20px;
-  padding-bottom: 60px;
+  font-size: 24px;
+  padding-bottom: 90px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .visit-out-resturant .inner-sec .text .details {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 25px;
   }
 }
@@ -698,8 +910,18 @@ body {
   color: #fff;
   font-size: 27px;
   font-family: "gotham-bold";
-  padding: 6px 10px;
+  padding: 3px 15px;
   border-radius: 20px;
+  display: inline-block;
+}
+.visit-out-resturant .inner-sec .text .more-btn:hover {
+  transform: scale(1.02);
+  background: #000;
+}
+@media (max-width: 991px) {
+  .visit-out-resturant .inner-sec .text .more-btn {
+    font-size: 25px;
+  }
 }
 .visit-out-resturant .inner-sec .shedule {
   border-radius: 40px;
@@ -720,14 +942,29 @@ body {
   font-size: 25px;
   font-family: "gotham-bold";
 }
+@media (max-width: 991px) {
+  .visit-out-resturant .inner-sec .shedule .head {
+    font-size: 20px;
+  }
+}
 .visit-out-resturant .inner-sec .shedule .day {
   font-family: "gotham-medium";
   font-size: 35px;
   color: #fff;
 }
+@media (max-width: 991px) {
+  .visit-out-resturant .inner-sec .shedule .day {
+    font-size: 25px;
+  }
+}
 .visit-out-resturant .inner-sec .shedule .time {
   font-size: 25px;
   color: #fff;
+}
+@media (max-width: 991px) {
+  .visit-out-resturant .inner-sec .shedule .time {
+    font-size: 20px;
+  }
 }
 
 .media {
@@ -840,9 +1077,10 @@ body {
   background: url(../images/before.png) no-repeat;
   z-index: -1;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .directions .container .card-template .title {
-    font-size: 70px;
+    font-size: 60px;
+    line-height: 1.2;
     padding-bottom: 35px;
   }
 }
@@ -851,16 +1089,22 @@ body {
   font-size: 24px;
   padding-bottom: 50px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .directions .container .card-template .subtitle {
     font-size: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
   }
 }
 .directions .container .card-template .para {
   color: #7b7472;
   font-size: 18px;
   padding-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .directions .container .card-template .para {
+    font-size: 16px;
+    padding-bottom: 25px;
+  }
 }
 .directions .container .card-template .btn-contact {
   background-color: #239f7c;
@@ -870,9 +1114,13 @@ body {
   font-size: 22px;
   padding: 15px;
 }
-@media (max-width: 767px) {
+.directions .container .card-template .btn-contact:hover {
+  transform: scale(1.02);
+  background: #000;
+}
+@media (max-width: 991px) {
   .directions .container .card-template .btn-contact {
-    padding: 5px;
+    font-size: 20px;
   }
 }
 .directions .container .card-template2 {
@@ -932,6 +1180,7 @@ body {
 }
 @media (max-width: 767px) {
   .directions .container .card-template2 .btn-contact {
+    font-size: 20px;
     padding: 5px;
   }
 }
@@ -939,6 +1188,12 @@ body {
 .menues {
   padding-top: 200px;
   padding-bottom: 400px;
+}
+@media (max-width: 767px) {
+  .menues {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
 }
 @media (min-width: 1650px) {
   .menues .container {
@@ -949,6 +1204,13 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 200px;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .menues .container .item-cardsa {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 .menues .container .item-cardsa .top {
   margin-bottom: 45px;
@@ -998,6 +1260,11 @@ body {
     white-space: pre-line;
   }
 }
+@media (max-width: 991px) {
+  .menues .container .item-cardsa .top p {
+    font-size: 18px;
+  }
+}
 .menues .container .item-cardsa .in-menu .list-item {
   padding-bottom: 20px;
 }
@@ -1006,10 +1273,20 @@ body {
   font-size: 20px;
   color: #4a3e3b;
 }
+@media (max-width: 991px) {
+  .menues .container .item-cardsa .in-menu .list-item .title1 {
+    font-size: 16px;
+  }
+}
 .menues .container .item-cardsa .in-menu .list-item .comp {
   color: #c8c3c3;
   font-family: "gotham-light";
   font-size: 16px;
+}
+@media (max-width: 991px) {
+  .menues .container .item-cardsa .in-menu .list-item .comp {
+    font-size: 12px;
+  }
 }
 .menues .container .item-cardsa .menu-item {
   padding-bottom: 70px;
@@ -1026,6 +1303,12 @@ body {
   font-size: 22px;
   color: #4a3e3b;
 }
+@media (max-width: 991px) {
+  .menues .container .item-cardsa .menu-3 .qntty p,
+  .menues .container .item-cardsa .menu-2 .qntty p {
+    font-size: 16px;
+  }
+}
 .menues .container .item-cardsa .menu-1 .qntty,
 .menues .container .item-cardsa .menu-4 .qntty {
   display: grid;
@@ -1037,6 +1320,12 @@ body {
   font-family: "gotham-medium";
   font-size: 22px;
   color: #4a3e3b;
+}
+@media (max-width: 991px) {
+  .menues .container .item-cardsa .menu-1 .qntty p,
+  .menues .container .item-cardsa .menu-4 .qntty p {
+    font-size: 16px;
+  }
 }
 
 /*===// end of components css === *//*# sourceMappingURL=style.css.map */

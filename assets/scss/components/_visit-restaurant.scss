@@ -25,17 +25,40 @@
             align-items: center;
             height: 100%;
 
+            @media(max-width: 991px) {
+                padding: 20px 10px;
+
+                img {
+                    max-width: 30px;
+                }
+            }
+
+
+
             .text {
                 padding-left: 20px;
+
+                @media(max-width: 767px) {
+                    padding-left: 10px;
+                }
 
                 .title {
                     color: #4a3e3b;
                     font-size: 30px;
                     padding-bottom: 10px;
+
+                    @media(max-width: 767px) {
+                        font-size: 20px;
+                    }
                 }
 
                 .contact {
                     color: #7b7472;
+                    display: inline-block;
+
+                    @media(max-width: 767px) {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -55,7 +78,7 @@
                 font-size: 90px;
                 line-height: 90px;
                 color: #4a3e3b;
-                padding-bottom: 40px;
+                padding-bottom: 45px;
                 position: relative;
                 z-index: 3;
 
@@ -70,19 +93,20 @@
                     z-index: -1;
                 }
 
-                @media(max-width: 767px) {
-                    font-size: 70px;
+                @media(max-width: 991px) {
+                    font-size: 60px;
+                    line-height: 1.2;
                     padding-bottom: 35px;
                 }
             }
 
             .details {
                 color: #7b7472;
-                font-size: 20px;
-                padding-bottom: 60px;
+                font-size: 24px;
+                padding-bottom: 90px;
 
-                @media(max-width: 767px) {
-                    font-size: 20px;
+                @media(max-width: 991px) {
+                    font-size: 18px;
                     padding-bottom: 25px;
                 }
             }
@@ -92,8 +116,18 @@
                 color: #fff;
                 font-size: 27px;
                 font-family: "gotham-bold";
-                padding: 6px 10px;
+                padding: 3px 15px;
                 border-radius: 20px;
+                display: inline-block;
+
+                &:hover {
+                    transform: scale(1.02);
+                    background: #000;
+                }
+
+                @media(max-width: 991px) {
+                    font-size: 25px;
+                }
             }
         }
 
@@ -115,6 +149,10 @@
                 padding: 5px 30px;
                 font-size: 25px;
                 font-family: "gotham-bold";
+
+                @media(max-width: 991px) {
+                    font-size: 20px;
+                }
             }
 
 
@@ -122,11 +160,19 @@
                 font-family: "gotham-medium";
                 font-size: 35px;
                 color: #fff;
+
+                @media(max-width: 991px) {
+                    font-size: 25px;
+                }
             }
 
             .time {
                 font-size: 25px;
                 color: #fff;
+
+                @media(max-width: 991px) {
+                    font-size: 20px;
+                }
             }
         }
     }

@@ -1,20 +1,11 @@
 
-// When the user scrolls down 50px from the top of the document, resize the header's font size
-window.onscroll = function () { scrollFunction() };
+const toggler = document.getElementById("navToggler");
+const navMenu = document.getElementById("navMenu");
 
-function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.getElementById("header").style.background = "rgb(0 0 0 / 25%)";
-        document.getElementById("header").style.backdropFilter = "blur(15px)";
-        document.getElementById("logooo").style.width = "100px";
-    } else {
-        document.getElementById("header").style.background = "none";
-        document.getElementById("header").style.backdropFilter = "none";
-        document.getElementById("logooo").style.width = "auto";
-    }
-}
-
-
+toggler.addEventListener('click', () => {
+    navMenu.classList.toggle("nav-menu-hidden");
+    navMenu.classList.toggle("nav-menu-show");
+});
 
 var swiper = new Swiper(".mini-menu", {
     slidesPerView: 6,
@@ -34,7 +25,7 @@ var swiper = new Swiper(".mini-menu", {
     },
     breakpoints: {
         320: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 40
         },
         768: {

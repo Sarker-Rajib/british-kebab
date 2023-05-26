@@ -17,16 +17,30 @@
   <!-- all codes for ===***header***=== starts from here -->
   <header class="header fixed-top" id="header">
     <div class="container">
-      <div class="d-flex align-items-center justify-content-between">
-        <a class="telephone" href="tel:+91 96354 25496">
-          <span class="d-flex align-items-center"><img src="assets/images/header/phone.png" alt=""><span>+91 96354
-              25496</span></span>
-        </a>
-        <div>
-          <a href="#"><img class="mx-1" src="assets/images/menu-page/facebook.png" alt="f"></a>
-          <a href="#"><img class="mx-1" src="assets/images/menu-page/twit.png" alt="t"></a>
-          <a href="#"><img class="mx-1" src="assets/images/menu-page/ointe.png" alt="pinterest"></a>
-          <button class="btn"><img src="assets/images/menu-page/bars.png" alt="aa"></button>
+      <div class="position-relative">
+        <div class="d-flex align-items-center justify-content-between">
+          <a class="telephone" href="tel:+91 96354 25496">
+            <span class="d-flex align-items-center"><img src="assets/images/header/phone.png" alt=""><span>+91 96354
+                25496</span></span>
+          </a>
+          <div>
+            <a class="s-btn social" href="#"><img src="assets/images/menu-page/facebook.png" alt="f"></a>
+            <a class="s-btn social" href="#"><img src="assets/images/menu-page/twit.png" alt="t"></a>
+            <a class="s-btn social" href="#"><img src="assets/images/menu-page/ointe.png" alt="pinterest"></a>
+            <button class="btn s-btn" id="navToggler"><img src="assets/images/menu-page/bars.png" alt="aa"></button>
+          </div>
+        </div>
+
+        <div class="nav-menu nav-menu-hidden" id="navMenu">
+          <ul class="navig">
+            <li><a class="navig-anchor" href="index.html">Home</a></li>
+            <li><a class="navig-anchor" href="#">About</a></li>
+            <li><a class="navig-anchor" href="menu.html">Menu</a></li>
+            <li><a class="navig-anchor" href="#">Reservation</a></li>
+            <li><a class="navig-anchor" href="#">Offers</a></li>
+            <li><a class="navig-anchor" href="#">OrderOnline</a></li>
+            <li><a class="navig-anchor" href="contact-us.html">Contact Us</a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -40,8 +54,8 @@
         <img src="assets/images/header/brand-loggo.png" alt="lgo" class="img-fluid">
       </div>
       <div>
-        <h1 class="main-heading">Contact Us</h1>
-        <p class="bread"><a href="index.html">Home</a> / Contact Us</p>
+        <h1 class="main-heading">Menu</h1>
+        <p class="bread"><a href="index.html">Home</a> / Menu</p>
       </div>
     </div>
   </section>
@@ -49,7 +63,7 @@
   <!-- all codes for ===***get-in-touch***=== starts from here -->
   <section class="menues">
     <div class="container">
-      <div class="item-cardsa gy-5">
+      <div class="item-cardsa">
         <div class="left">
           <div class="menu-item menu-1">
             <div class="top">
@@ -450,6 +464,7 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
   <!-- all codes for ===***get-in-touch***=== ended -->
 
@@ -524,6 +539,19 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("header").style.background = "rgb(0 0 0 / 25%)";
+        document.getElementById("header").style.backdropFilter = "blur(15px)";
+      } else {
+        document.getElementById("header").style.background = "none";
+        document.getElementById("header").style.backdropFilter = "none";
+      }
+    }
   </script>
   <script src="assets/js/custom.js"></script>
   <!-- .........script ended............. -->

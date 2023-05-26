@@ -17,12 +17,27 @@
   <!-- all codes for ===***header***=== starts from here -->
   <header class="header fixed-top" id="header">
     <div class="container">
-      <div class="d-flex align-items-center justify-content-between">
-        <a class="telephone" href="tel:+91 96354 25496">
-          <span class="d-flex align-items-center"><img src="assets/images/header/phone.png" alt=""><span>+91 96354
-              25496</span></span>
-        </a>
-        <button class="btn"><img src="assets/images/contact-banner/menuline.png" alt="aa"></button>
+      <div class="position-relative">
+        <div class="d-flex align-items-center justify-content-between">
+          <a class="telephone" href="tel:+91 96354 25496">
+            <span class="d-flex align-items-center"><img src="assets/images/header/phone.png" alt=""><span>+91 96354
+                25496</span></span>
+          </a>
+          <button class="btn s-btn" id="navToggler"><img src="assets/images/contact-banner/menuline.png"
+              alt="aa"></button>
+        </div>
+
+        <div class="nav-menu nav-menu-hidden" id="navMenu">
+          <ul class="navig">
+            <li><a class="navig-anchor" href="index.html">Home</a></li>
+            <li><a class="navig-anchor" href="#">About</a></li>
+            <li><a class="navig-anchor" href="menu.html">Menu</a></li>
+            <li><a class="navig-anchor" href="#">Reservation</a></li>
+            <li><a class="navig-anchor" href="#">Offers</a></li>
+            <li><a class="navig-anchor" href="#">OrderOnline</a></li>
+            <li><a class="navig-anchor" href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -99,7 +114,7 @@
                 <h4 class="title">
                   Email
                 </h4>
-                <a class="contact" href="mailto:Contact@example.com">Contact@example.com</a>
+                <a class="contact" href="mailto:Contact@example.com">Contact@ example.com</a>
               </div>
             </div>
           </div>
@@ -286,6 +301,21 @@
     AOS.init();
   </script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    // When the user scrolls down 50px from the top of the document, resize the header's font size
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("header").style.background = "rgb(0 0 0 / 25%)";
+        document.getElementById("header").style.backdropFilter = "blur(15px)";
+      } else {
+        document.getElementById("header").style.background = "none";
+        document.getElementById("header").style.backdropFilter = "none";
+      }
+    }
+
+  </script>
   <!-- .........script ended............. -->
 </body>
 
