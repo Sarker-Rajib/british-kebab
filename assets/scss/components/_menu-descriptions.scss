@@ -1,0 +1,121 @@
+.menues {
+    padding-top: 200px;
+    padding-bottom: 400px;
+
+    .container {
+        @media(min-width: 1650px) {
+            max-width: 1620px;
+        }
+
+        .item-cardsa {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 200px;
+
+            .top {
+                margin-bottom: 45px;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: -20px;
+                    top: 0;
+                    width: 4px;
+                    height: 100%;
+                    background: #dd820b;
+                }
+
+                .heading {
+                    font-family: "Rancho";
+                    font-size: 90px;
+                    line-height: 90px;
+                    color: #4a3e3b;
+                    padding-bottom: 24px;
+                    position: relative;
+                    z-index: 3;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 20px;
+                        left: -15px;
+                        height: 100px;
+                        width: 100%;
+                        background: url(../images/before.png) no-repeat;
+                        z-index: -1;
+                    }
+
+                    @media(max-width: 767px) {
+                        font-size: 70px;
+                        padding-bottom: 35px;
+                    }
+
+                }
+
+                p {
+                    font-size: 24px;
+                    line-height: 1.2;
+                    font-family: "gotham-lihgt";
+
+                    @media(min-width: 1200px) {
+                        white-space: pre-line;
+                    }
+                }
+            }
+
+            .in-menu {
+                .list-item {
+                    padding-bottom: 20px;
+
+                    .title1 {
+                        font-family: "gotham-medium";
+                        font-size: 20px;
+                        color: #4a3e3b;
+                    }
+
+                    .comp {
+                        color: #c8c3c3;
+                        font-family: "gotham-light";
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .menu-item {
+                padding-bottom: 70px;
+            }
+
+            .menu-3,
+            .menu-2 {
+                .qntty {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    place-items: center;
+
+                    p {
+                        font-family: "gotham-medium";
+                        font-size: 22px;
+                        color: #4a3e3b;
+                    }
+                }
+            }
+
+            .menu-1,
+            .menu-4 {
+                .qntty {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    place-items: center;
+
+                    p {
+                        font-family: "gotham-medium";
+                        font-size: 22px;
+                        color: #4a3e3b;
+                    }
+                }
+            }
+        }
+
+    }
+}

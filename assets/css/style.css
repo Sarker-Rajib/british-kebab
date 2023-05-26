@@ -8,6 +8,10 @@
   src: url(../fonts/gotham/GothamMedium.ttf);
 }
 @font-face {
+  font-family: "gotham-lihgt";
+  src: url(../fonts/gotham/GothamLight.otf);
+}
+@font-face {
   font-family: "gotham-book";
   src: url(../fonts/gotham/GothamBook.ttf);
 }
@@ -142,6 +146,37 @@ body {
 .banner {
   padding-top: 200px;
   background: url(../images/banner/banner-b.png) no-repeat bottom center/cover;
+}
+
+.menu-banner {
+  background: url(../images/menu-page/menu-bg.png) bottom left/cover;
+  padding-top: 160px;
+  padding-bottom: 100px;
+  margin-bottom: -50px;
+  position: relative;
+  z-index: 3;
+}
+@media (min-width: 1400px) {
+  .menu-banner .container {
+    max-width: 1160px;
+  }
+}
+.menu-banner .container .main-heading {
+  margin-top: 60px;
+  font-family: "Rancho";
+  font-size: 115px;
+  color: #fff;
+}
+.menu-banner .container .bread {
+  font-family: "Rancho";
+  font-size: 35px;
+  color: #fff;
+}
+.menu-banner .container .bread a {
+  color: #fff;
+}
+.menu-banner .container .bread a:hover {
+  color: #d8910d;
 }
 
 .contact-banner {
@@ -899,6 +934,109 @@ body {
   .directions .container .card-template2 .btn-contact {
     padding: 5px;
   }
+}
+
+.menues {
+  padding-top: 200px;
+  padding-bottom: 400px;
+}
+@media (min-width: 1650px) {
+  .menues .container {
+    max-width: 1620px;
+  }
+}
+.menues .container .item-cardsa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 200px;
+}
+.menues .container .item-cardsa .top {
+  margin-bottom: 45px;
+  position: relative;
+}
+.menues .container .item-cardsa .top::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #dd820b;
+}
+.menues .container .item-cardsa .top .heading {
+  font-family: "Rancho";
+  font-size: 90px;
+  line-height: 90px;
+  color: #4a3e3b;
+  padding-bottom: 24px;
+  position: relative;
+  z-index: 3;
+}
+.menues .container .item-cardsa .top .heading::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -15px;
+  height: 100px;
+  width: 100%;
+  background: url(../images/before.png) no-repeat;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .menues .container .item-cardsa .top .heading {
+    font-size: 70px;
+    padding-bottom: 35px;
+  }
+}
+.menues .container .item-cardsa .top p {
+  font-size: 24px;
+  line-height: 1.2;
+  font-family: "gotham-lihgt";
+}
+@media (min-width: 1200px) {
+  .menues .container .item-cardsa .top p {
+    white-space: pre-line;
+  }
+}
+.menues .container .item-cardsa .in-menu .list-item {
+  padding-bottom: 20px;
+}
+.menues .container .item-cardsa .in-menu .list-item .title1 {
+  font-family: "gotham-medium";
+  font-size: 20px;
+  color: #4a3e3b;
+}
+.menues .container .item-cardsa .in-menu .list-item .comp {
+  color: #c8c3c3;
+  font-family: "gotham-light";
+  font-size: 16px;
+}
+.menues .container .item-cardsa .menu-item {
+  padding-bottom: 70px;
+}
+.menues .container .item-cardsa .menu-3 .qntty,
+.menues .container .item-cardsa .menu-2 .qntty {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+.menues .container .item-cardsa .menu-3 .qntty p,
+.menues .container .item-cardsa .menu-2 .qntty p {
+  font-family: "gotham-medium";
+  font-size: 22px;
+  color: #4a3e3b;
+}
+.menues .container .item-cardsa .menu-1 .qntty,
+.menues .container .item-cardsa .menu-4 .qntty {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+.menues .container .item-cardsa .menu-1 .qntty p,
+.menues .container .item-cardsa .menu-4 .qntty p {
+  font-family: "gotham-medium";
+  font-size: 22px;
+  color: #4a3e3b;
 }
 
 /*===// end of components css === *//*# sourceMappingURL=style.css.map */
