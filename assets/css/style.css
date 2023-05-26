@@ -1195,21 +1195,27 @@ body {
     padding-bottom: 200px;
   }
 }
-@media (min-width: 1650px) {
+@media (min-width: 992px) {
   .menues .container {
     max-width: 1620px;
   }
 }
 .menues .container .item-cardsa {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 200px;
+  display: flex;
   overflow: hidden;
+}
+@media (min-width: 992px) {
+  .menues .container .item-cardsa {
+    justify-content: space-between;
+  }
+  .menues .container .item-cardsa .left,
+  .menues .container .item-cardsa .right {
+    width: 45%;
+  }
 }
 @media (max-width: 991px) {
   .menues .container .item-cardsa {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    flex-direction: column;
   }
 }
 .menues .container .item-cardsa .top {
@@ -1287,6 +1293,16 @@ body {
   .menues .container .item-cardsa .in-menu .list-item .comp {
     font-size: 12px;
   }
+}
+.menues .container .item-cardsa .bottom .swiper .swiper-button-prev::after {
+  color: #de702a;
+  font-size: 25px;
+  font-weight: bold;
+}
+.menues .container .item-cardsa .bottom .swiper .swiper-button-next::after {
+  color: #de702a;
+  font-size: 25px;
+  font-weight: bold;
 }
 .menues .container .item-cardsa .menu-item {
   padding-bottom: 70px;

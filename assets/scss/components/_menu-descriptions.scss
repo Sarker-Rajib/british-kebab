@@ -8,19 +8,25 @@
     }
 
     .container {
-        @media(min-width: 1650px) {
+        @media(min-width: 992px) {
             max-width: 1620px;
         }
 
         .item-cardsa {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 200px;
+            display: flex;
             overflow: hidden;
 
+            @media(min-width: 992px) {
+                justify-content: space-between;
+
+                .left,
+                .right {
+                    width: 45%;
+                }
+            }
+
             @media(max-width: 991px) {
-                grid-template-columns: 1fr;
-                gap: 20px;
+                flex-direction: column;
             }
 
 
@@ -103,6 +109,27 @@
 
                         @media(max-width: 991px) {
                             font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .bottom {
+                .swiper {
+
+                    .swiper-button-prev {
+                        &::after {
+                            color: #de702a;
+                            font-size: 25px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .swiper-button-next {
+                        &::after {
+                            color: #de702a;
+                            font-size: 25px;
+                            font-weight: bold;
                         }
                     }
                 }
