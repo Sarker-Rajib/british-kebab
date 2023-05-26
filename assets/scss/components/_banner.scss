@@ -5,7 +5,7 @@
 
 .menu-banner {
     background: url(../images/menu-page/menu-bg.png) bottom left/cover;
-    padding-top: 160px;
+    padding-top: 120px;
     padding-bottom: 100px;
     margin-bottom: -50px;
     position: relative;
@@ -16,17 +16,32 @@
             max-width: 1160px;
         }
 
+        .logo-bba {
+            @media(max-width: 767px) {
+                max-width: 200px;
+            }
+        }
+
         .main-heading {
-            margin-top: 60px;
+            margin-top: 35px;
             font-family: "Rancho";
             font-size: 115px;
             color: #fff;
+
+            @media(max-width: 767px) {
+                font-size: 80px;
+            }
         }
 
         .bread {
             font-family: "Rancho";
             font-size: 35px;
             color: #fff;
+
+
+            @media(max-width: 767px) {
+                font-size: 25px;
+            }
 
             a {
                 color: #fff;
@@ -41,7 +56,7 @@
 
 .contact-banner {
     background: url(../images/contact-banner/con-banner-bg.png) bottom left/cover;
-    padding-top: 160px;
+    padding-top: 120px;
     padding-bottom: 100px;
     margin-bottom: -50px;
     position: relative;
@@ -52,17 +67,31 @@
             max-width: 1160px;
         }
 
+        .logo-bba {
+            @media(max-width: 767px) {
+                max-width: 200px;
+            }
+        }
+
         .main-heading {
             margin-top: 60px;
             font-family: "Rancho";
             font-size: 115px;
             color: #fff;
+
+            @media(max-width: 767px) {
+                font-size: 70px;
+            }
         }
 
         .bread {
             font-family: "Rancho";
             font-size: 35px;
             color: #fff;
+
+            @media(max-width: 767px) {
+                font-size: 25px;
+            }
 
             a {
                 color: #fff;

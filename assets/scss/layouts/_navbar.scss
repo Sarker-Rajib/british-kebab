@@ -29,6 +29,10 @@
         .s-btn {
             margin-left: 10px;
 
+            @media(max-width: 767px) {
+                margin-left: 5px;
+            }
+
             &.social {
                 margin: 0 5px;
                 display: inline-block;
@@ -37,6 +41,9 @@
                 width: 36px;
                 justify-content: center;
 
+                @media(max-width: 767px) {
+                    margin: 0 1px;
+                }
             }
 
             &:hover {

@@ -52,11 +52,21 @@
             }
 
             .submit {
-                background: #239f7c;
-                border-radius: 220px;
+                background: #24a07d;
                 color: #fff;
+                font-size: 27px;
                 font-family: "gotham-bold";
-                font-size: 22px;
+                padding: 3px 15px;
+                border-radius: 20px;
+                display: inline-block;
+
+                &:hover {
+                    background: #000;
+                }
+
+                @media(max-width: 991px) {
+                    font-size: 25px;
+                }
             }
         }
     }

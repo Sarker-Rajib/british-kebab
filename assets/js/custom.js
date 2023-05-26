@@ -11,10 +11,7 @@ toggler.addEventListener('click', () => {
 var swiper = new Swiper(".mini-menu", {
     slidesPerView: 6,
     spaceBetween: 30,
-
-    // freeMode: true,
     loop: true,
-    // centeredSlides: true,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

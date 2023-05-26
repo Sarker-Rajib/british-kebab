@@ -86,6 +86,11 @@ body {
 .header .container .s-btn {
   margin-left: 10px;
 }
+@media (max-width: 767px) {
+  .header .container .s-btn {
+    margin-left: 5px;
+  }
+}
 .header .container .s-btn.social {
   margin: 0 5px;
   display: inline-block;
@@ -93,6 +98,11 @@ body {
   height: 36px;
   width: 36px;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .header .container .s-btn.social {
+    margin: 0 1px;
+  }
 }
 .header .container .s-btn:hover {
   background: #c97414;
@@ -229,7 +239,7 @@ body {
 
 .menu-banner {
   background: url(../images/menu-page/menu-bg.png) bottom left/cover;
-  padding-top: 160px;
+  padding-top: 120px;
   padding-bottom: 100px;
   margin-bottom: -50px;
   position: relative;
@@ -240,16 +250,31 @@ body {
     max-width: 1160px;
   }
 }
+@media (max-width: 767px) {
+  .menu-banner .container .logo-bba {
+    max-width: 200px;
+  }
+}
 .menu-banner .container .main-heading {
-  margin-top: 60px;
+  margin-top: 35px;
   font-family: "Rancho";
   font-size: 115px;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .menu-banner .container .main-heading {
+    font-size: 80px;
+  }
 }
 .menu-banner .container .bread {
   font-family: "Rancho";
   font-size: 35px;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .menu-banner .container .bread {
+    font-size: 25px;
+  }
 }
 .menu-banner .container .bread a {
   color: #fff;
@@ -260,7 +285,7 @@ body {
 
 .contact-banner {
   background: url(../images/contact-banner/con-banner-bg.png) bottom left/cover;
-  padding-top: 160px;
+  padding-top: 120px;
   padding-bottom: 100px;
   margin-bottom: -50px;
   position: relative;
@@ -271,16 +296,31 @@ body {
     max-width: 1160px;
   }
 }
+@media (max-width: 767px) {
+  .contact-banner .container .logo-bba {
+    max-width: 200px;
+  }
+}
 .contact-banner .container .main-heading {
   margin-top: 60px;
   font-family: "Rancho";
   font-size: 115px;
   color: #fff;
 }
+@media (max-width: 767px) {
+  .contact-banner .container .main-heading {
+    font-size: 70px;
+  }
+}
 .contact-banner .container .bread {
   font-family: "Rancho";
   font-size: 35px;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .contact-banner .container .bread {
+    font-size: 25px;
+  }
 }
 .contact-banner .container .bread a {
   color: #fff;
@@ -305,8 +345,8 @@ body {
 .mini-showcase .swiper {
   padding: 0 20px;
 }
-.mini-showcase .swiper .swiper-wrapper .swiper-slide {
-  padding: 20px;
+.mini-showcase .swiper .swiper-wrapper {
+  padding: 30px 0;
 }
 .mini-showcase .swiper .swiper-wrapper .swiper-slide .carousel-card {
   display: flex;
@@ -325,7 +365,7 @@ body {
 }
 @media (max-width: 767px) {
   .mini-showcase .swiper .swiper-wrapper .swiper-slide .carousel-card img {
-    max-width: 80px;
+    max-width: 120px;
   }
 }
 .mini-showcase .swiper .swiper-wrapper .swiper-slide .carousel-card:hover {
@@ -675,7 +715,7 @@ body {
 }
 @media (max-width: 767px) {
   .special-menu {
-    padding: 120px 0 100px;
+    padding: 120px 0 160px;
   }
 }
 @media (min-width: 1300px) {
@@ -790,11 +830,21 @@ body {
   color: #7b7472;
 }
 .get-in-touch .container .c-form .submit {
-  background: #239f7c;
-  border-radius: 220px;
+  background: #24a07d;
   color: #fff;
+  font-size: 27px;
   font-family: "gotham-bold";
-  font-size: 22px;
+  padding: 3px 15px;
+  border-radius: 20px;
+  display: inline-block;
+}
+.get-in-touch .container .c-form .submit:hover {
+  background: #000;
+}
+@media (max-width: 991px) {
+  .get-in-touch .container .c-form .submit {
+    font-size: 25px;
+  }
 }
 
 .visit-out-resturant {
@@ -1034,7 +1084,7 @@ body {
 }
 @media (max-width: 767px) {
   .directions {
-    padding: 90px 0 150px;
+    padding: 90px 0 180px;
   }
 }
 @media (min-width: 1400px) {
@@ -1184,15 +1234,21 @@ body {
     padding: 5px;
   }
 }
+@media (max-width: 419px) {
+  .directions .container .card-template2 .btn-contact {
+    font-size: 18px;
+    padding: 5px;
+  }
+}
 
 .menues {
-  padding-top: 200px;
-  padding-bottom: 400px;
+  padding-top: 120px;
+  padding-bottom: 250px;
 }
 @media (max-width: 767px) {
   .menues {
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 @media (min-width: 992px) {
