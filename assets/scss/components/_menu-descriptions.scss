@@ -14,7 +14,6 @@
 
         .item-cardsa {
             display: flex;
-            overflow: hidden;
 
             @media(min-width: 992px) {
                 justify-content: space-between;
@@ -27,8 +26,8 @@
 
             @media(max-width: 991px) {
                 flex-direction: column;
+                overflow: hidden;
             }
-
 
             .top {
                 margin-bottom: 45px;

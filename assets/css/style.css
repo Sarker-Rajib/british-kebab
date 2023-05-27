@@ -156,7 +156,7 @@ body {
 @media (max-width: 991px) {
   .footer {
     background: url(../images/footer/bg-2-footer.png) no-repeat top center/cover;
-    margin-top: -250px;
+    margin-top: -280px;
   }
 }
 .footer .container {
@@ -217,7 +217,7 @@ body {
 /*===// end of layouts css === */
 /*=== components css start === */
 .banner {
-  padding-top: 200px;
+  padding-top: 150px;
   background: url(../images/banner/banner-b.png) no-repeat bottom center/cover;
 }
 
@@ -699,7 +699,7 @@ body {
 }
 @media (max-width: 767px) {
   .special-menu {
-    padding: 120px 0 160px;
+    padding: 120px 0 200px;
   }
 }
 @media (min-width: 1300px) {
@@ -1242,7 +1242,6 @@ body {
 }
 .menues .container .item-cardsa {
   display: flex;
-  overflow: hidden;
 }
 @media (min-width: 992px) {
   .menues .container .item-cardsa {
@@ -1256,6 +1255,7 @@ body {
 @media (max-width: 991px) {
   .menues .container .item-cardsa {
     flex-direction: column;
+    overflow: hidden;
   }
 }
 .menues .container .item-cardsa .top {
