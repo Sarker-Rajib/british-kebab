@@ -1,12 +1,4 @@
 
-const toggler = document.getElementById("navToggler");
-const navMenu = document.getElementById("navMenu");
-
-toggler.addEventListener('click', () => {
-    navMenu.classList.toggle("nav-menu-hidden");
-    navMenu.classList.toggle("nav-menu-show");
-});
-
 // mini slider
 var swiper = new Swiper(".mini-menu", {
     slidesPerView: 6,
@@ -38,7 +30,7 @@ var swiper = new Swiper(".mini-menu", {
 });
 
 //  item slider
-var swiper = new Swiper(".item-ddetails", {
+var swiper = new Swiper(".item-details", {
     slidesPerView: 1,
     // freeMode: true,
     loop: true,

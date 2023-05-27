@@ -110,9 +110,9 @@ body {
 .header .container .s-btn:hover.social img {
   transform: scale(1.1);
 }
-.header .container .nav-menu {
+
+.offcanvas .nav-menu {
   position: absolute;
-  background: #ffffff;
   left: 0;
   top: calc(100% + 10px);
   width: 100%;
@@ -120,40 +120,24 @@ body {
   padding: 10px 0;
   transition: all 0.3s;
 }
-.header .container .nav-menu-hidden {
-  display: none;
-  transition: all 0.3s;
-}
-.header .container .nav-menu-show {
-  display: block;
-  transition: all 0.3s;
-}
-.header .container .navig {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.offcanvas .navig {
   padding: 0;
 }
-@media (max-width: 991px) {
-  .header .container .navig {
-    flex-direction: column;
-  }
-}
-.header .container .navig .navig-anchor {
+.offcanvas .navig .navig-anchor {
   font-family: "gotham-bold";
   font-size: 17px;
-  margin: 0 15px;
+  margin: 10px;
   padding: 5px 15px;
-  color: #4a3e3b;
-  display: inline-block;
-}
-.header .container .navig .navig-anchor:hover {
-  background: #c97414;
-  color: #fff;
+  color: #ffffff;
+  display: block;
   border-radius: 10px;
 }
+.offcanvas .navig .navig-anchor:hover {
+  background: #c97414;
+  color: #fff;
+}
 @media (max-width: 991px) {
-  .header .container .navig .navig-anchor {
+  .offcanvas .navig .navig-anchor {
     padding: 2px 10px;
   }
 }
