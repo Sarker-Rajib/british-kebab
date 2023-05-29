@@ -315,6 +315,10 @@ body {
 
 .mini-showcase {
   padding: 100px 0;
+  position: relative;
+  margin-bottom: -100px;
+  z-index: 10;
+  background: url(../images/mini.png) no-repeat bottom left/cover;
 }
 @media (max-width: 991px) {
   .mini-showcase {
@@ -373,8 +377,11 @@ body {
 }
 
 .trendin-and-family {
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 9;
   padding: 150px 0;
-  background: url(../images/tren-family/b22.png) no-repeat top left/cover;
+  background: url(../images/family-bg.png) no-repeat bottom left/cover;
 }
 @media (max-width: 767px) {
   .trendin-and-family {
@@ -451,7 +458,7 @@ body {
 
 .item-description {
   padding: 170px 0 120px;
-  background: url(../images/item-details/b-main-item.png) no-repeat top left/cover;
+  background: url(../images/tortilla-bg.png) no-repeat top left/cover fixed;
 }
 @media (max-width: 767px) {
   .item-description {
@@ -609,8 +616,11 @@ body {
 }
 
 .menu-cards {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -60px;
   padding: 150px 0 120px;
-  background: #fdc493;
+  background: url(../images/menu-card-bg.png) no-repeat bottom left/cover;
 }
 @media (max-width: 767px) {
   .menu-cards {
@@ -689,7 +699,7 @@ body {
 }
 
 .special-menu {
-  background: url(../images/special-menu/bg-special.png) no-repeat top left/cover;
+  background: url(../images/last-bg.png) no-repeat top left/cover fixed;
   padding: 200px 0 400px;
 }
 @media (max-width: 991px) {
@@ -1002,7 +1012,7 @@ body {
 }
 
 .media {
-  background: url(../images/contact-banner/media-bg.png) top center/cover;
+  background: url(../images/contact-banner/media-bg.png) top center/cover fixed;
   padding: 30px;
 }
 @media (min-width: 1400px) {

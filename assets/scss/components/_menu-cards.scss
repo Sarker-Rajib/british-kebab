@@ -1,6 +1,9 @@
 .menu-cards {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -60px;
     padding: 150px 0 120px;
-    background: #fdc493;
+    background: url(../images/menu-card-bg.png) no-repeat bottom left/cover;
 
     @media(max-width: 767px) {
         padding: 100px 0 80px;

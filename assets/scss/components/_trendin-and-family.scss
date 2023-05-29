@@ -1,6 +1,9 @@
 .trendin-and-family {
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 9;
     padding: 150px 0;
-    background: url(../images/tren-family/b22.png) no-repeat top left/cover;
+    background: url(../images/family-bg.png) no-repeat bottom left/cover;
 
     @media(max-width: 767px) {
         padding: 120px 0 80px;
