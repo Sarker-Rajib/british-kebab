@@ -1237,35 +1237,23 @@ body {
 }
 @media (min-width: 992px) {
   .menues .container {
-    max-width: 1620px;
-  }
-}
-.menues .container .item-cardsa {
-  display: flex;
-}
-@media (min-width: 992px) {
-  .menues .container .item-cardsa {
-    justify-content: space-between;
-  }
-  .menues .container .item-cardsa .left,
-  .menues .container .item-cardsa .right {
-    width: 45%;
+    max-width: 1140px;
   }
 }
 @media (max-width: 991px) {
   .menues .container .item-cardsa {
-    flex-direction: column;
     overflow: hidden;
   }
 }
 .menues .container .item-cardsa .top {
   margin-bottom: 45px;
   position: relative;
+  padding-left: 30px;
 }
 .menues .container .item-cardsa .top::after {
   content: "";
   position: absolute;
-  left: -20px;
+  left: 10px;
   top: 0;
   width: 4px;
   height: 100%;
@@ -1297,7 +1285,7 @@ body {
   }
 }
 .menues .container .item-cardsa .top p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.2;
   font-family: "gotham-lihgt";
 }
@@ -1310,6 +1298,55 @@ body {
   .menues .container .item-cardsa .top p {
     font-size: 18px;
   }
+}
+.menues .container .item-cardsa .nabigationSlider .swiper-wrapper {
+  flex-direction: column;
+}
+.menues .container .item-cardsa .nabigationSlider .swiper-wrapper .list-item {
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.menues .container .item-cardsa .nabigationSlider .swiper-wrapper .list-item .title1 {
+  font-family: "gotham-medium";
+  font-size: 20px;
+  color: #4a3e3b;
+}
+@media (max-width: 991px) {
+  .menues .container .item-cardsa .nabigationSlider .swiper-wrapper .list-item .title1 {
+    font-size: 16px;
+  }
+}
+.menues .container .item-cardsa .nabigationSlider .swiper-wrapper .list-item .comp {
+  color: #c8c3c3;
+  font-family: "gotham-light";
+  font-size: 16px;
+}
+@media (max-width: 991px) {
+  .menues .container .item-cardsa .nabigationSlider .swiper-wrapper .list-item .comp {
+    font-size: 12px;
+  }
+}
+.menues .container .item-cardsa .nabigationSlider .swiper-wrapper .swiper-slide-thumb-active {
+  position: relative;
+}
+.menues .container .item-cardsa .nabigationSlider .swiper-wrapper .swiper-slide-thumb-active .list-item .title1 {
+  font-weight: bold;
+}
+.menues .container .item-cardsa .nabigationSlider .swiper-wrapper .swiper-slide-thumb-active .list-item .qntty {
+  font-weight: bold;
+}
+.menues .container .item-cardsa .nabigationSlider .swiper-wrapper .swiper-slide-thumb-active .list-item .xxx {
+  position: relative;
+  padding-left: 10px;
+}
+.menues .container .item-cardsa .nabigationSlider .swiper-wrapper .swiper-slide-thumb-active .list-item .xxx::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: #de702a;
+  left: 0px;
+  top: 0;
 }
 .menues .container .item-cardsa .in-menu .list-item {
   padding-bottom: 20px;
@@ -1334,18 +1371,42 @@ body {
     font-size: 12px;
   }
 }
-.menues .container .item-cardsa .bottom .swiper .swiper-button-prev::after {
+.menues .container .item-cardsa .itemSliderWithNav {
+  position: relative;
+  padding: 60px;
+  margin-bottom: -100px;
+  z-index: 999;
+}
+.menues .container .item-cardsa .itemSliderWithNav .swiper-button-prev {
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.menues .container .item-cardsa .itemSliderWithNav .swiper-button-prev::after {
   color: #de702a;
   font-size: 25px;
   font-weight: bold;
 }
-.menues .container .item-cardsa .bottom .swiper .swiper-button-next::after {
+.menues .container .item-cardsa .itemSliderWithNav .swiper-button-next {
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.menues .container .item-cardsa .itemSliderWithNav .swiper-button-next::after {
   color: #de702a;
   font-size: 25px;
   font-weight: bold;
 }
 .menues .container .item-cardsa .menu-item {
-  padding-bottom: 70px;
+  margin-bottom: 150px;
+  background: #f5f4f4;
+  padding: 30px 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 222px;
+  border-bottom-left-radius: 222px;
 }
 .menues .container .item-cardsa .menu-3 .qntty,
 .menues .container .item-cardsa .menu-2 .qntty {
