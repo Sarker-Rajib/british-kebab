@@ -26,6 +26,7 @@
             height: 100%;
 
             @media(max-width: 991px) {
+                min-height: 160px;
                 padding: 20px 10px;
 
                 img {
@@ -33,7 +34,14 @@
                 }
             }
 
+            @media(max-width: 767px) {
+                min-height: auto;
+                padding: 20px;
 
+                img {
+                    max-width: 50px;
+                }
+            }
 
             .text {
                 padding-left: 20px;

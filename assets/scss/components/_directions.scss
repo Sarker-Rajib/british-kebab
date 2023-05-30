@@ -10,6 +10,14 @@
             max-width: 1160px;
         }
 
+        .map {
+            height: 540px;
+
+            @media(max-width: 991px) {
+                height: 380px;
+            }
+        }
+
         .card-template {
             padding: 45px;
             border-radius: 40px;

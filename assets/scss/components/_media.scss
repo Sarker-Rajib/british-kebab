@@ -24,6 +24,10 @@
             margin: 200px 100px;
             position: relative;
 
+            @media(max-width: 1040px) {
+                margin: 100px 80px;
+            }
+
             @media(max-width: 767px) {
                 margin: 50px 20px;
             }
@@ -32,6 +36,12 @@
                 position: absolute;
                 top: -140px;
                 right: -80px;
+
+                @media(max-width: 1040px) {
+                    width: 240px;
+                    top: -80px;
+                    right: -80px;
+                }
 
                 @media(max-width: 767px) {
                     width: 140px;
@@ -45,6 +55,12 @@
                 bottom: -140px;
                 left: -80px;
 
+
+                @media(max-width: 1040px) {
+                    width: 240px;
+                    bottom: -80px;
+                    left: -80px;
+                }
 
                 @media(max-width: 767px) {
                     width: 140px;

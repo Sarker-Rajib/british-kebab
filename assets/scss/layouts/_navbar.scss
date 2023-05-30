@@ -23,6 +23,7 @@
 
             @media(max-width: 767px) {
                 font-size: 12px;
+                padding: 5px;
             }
         }
 
@@ -50,8 +51,10 @@
                 background: #c97414;
 
                 &.social {
+                    background: #c9751400;
+
                     img {
-                        transform: scale(1.1);
+                        transform: scale(1.15);
                     }
                 }
             }

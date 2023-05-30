@@ -81,6 +81,7 @@ body {
 @media (max-width: 767px) {
   .header .container .telephone {
     font-size: 12px;
+    padding: 5px;
   }
 }
 .header .container .s-btn {
@@ -107,8 +108,11 @@ body {
 .header .container .s-btn:hover {
   background: #c97414;
 }
+.header .container .s-btn:hover.social {
+  background: rgba(201, 117, 20, 0);
+}
 .header .container .s-btn:hover.social img {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .offcanvas .nav-menu {
@@ -870,10 +874,20 @@ body {
 }
 @media (max-width: 991px) {
   .visit-out-resturant .topper .con-card {
+    min-height: 160px;
     padding: 20px 10px;
   }
   .visit-out-resturant .topper .con-card img {
     max-width: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .visit-out-resturant .topper .con-card {
+    min-height: auto;
+    padding: 20px;
+  }
+  .visit-out-resturant .topper .con-card img {
+    max-width: 50px;
   }
 }
 .visit-out-resturant .topper .con-card .text {
@@ -1037,6 +1051,11 @@ body {
   margin: 200px 100px;
   position: relative;
 }
+@media (max-width: 1040px) {
+  .media .wrapper .image-holder {
+    margin: 100px 80px;
+  }
+}
 @media (max-width: 767px) {
   .media .wrapper .image-holder {
     margin: 50px 20px;
@@ -1046,6 +1065,13 @@ body {
   position: absolute;
   top: -140px;
   right: -80px;
+}
+@media (max-width: 1040px) {
+  .media .wrapper .image-holder .img111 {
+    width: 240px;
+    top: -80px;
+    right: -80px;
+  }
 }
 @media (max-width: 767px) {
   .media .wrapper .image-holder .img111 {
@@ -1058,6 +1084,13 @@ body {
   position: absolute;
   bottom: -140px;
   left: -80px;
+}
+@media (max-width: 1040px) {
+  .media .wrapper .image-holder .img112 {
+    width: 240px;
+    bottom: -80px;
+    left: -80px;
+  }
 }
 @media (max-width: 767px) {
   .media .wrapper .image-holder .img112 {
@@ -1084,6 +1117,14 @@ body {
 @media (min-width: 1400px) {
   .directions .container {
     max-width: 1160px;
+  }
+}
+.directions .container .map {
+  height: 540px;
+}
+@media (max-width: 991px) {
+  .directions .container .map {
+    height: 380px;
   }
 }
 .directions .container .card-template {
