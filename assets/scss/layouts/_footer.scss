@@ -3,16 +3,15 @@
     padding: 200px 0 100px;
     background: url(../images/footer/footer-bg.png) no-repeat top left/cover;
 
-    @media(max-width: 767px) {
-        padding: 200px 0 50px;
-        background: url(../images/footer/bg-2-footer.png) no-repeat top left/cover;
-    }
-
     @media(max-width: 991px) {
         background: url(../images/footer/bg-2-footer.png) no-repeat top center/cover;
         margin-top: -280px;
     }
 
+    @media(max-width: 767px) {
+        padding: 200px 0 50px;
+        background: url(../images/footer/bg-2-footer.png) no-repeat top left/cover;
+    }
 
     .container {
         max-width: 1200px;

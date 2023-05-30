@@ -151,16 +151,16 @@ body {
   padding: 200px 0 100px;
   background: url(../images/footer/footer-bg.png) no-repeat top left/cover;
 }
-@media (max-width: 767px) {
-  .footer {
-    padding: 200px 0 50px;
-    background: url(../images/footer/bg-2-footer.png) no-repeat top left/cover;
-  }
-}
 @media (max-width: 991px) {
   .footer {
     background: url(../images/footer/bg-2-footer.png) no-repeat top center/cover;
     margin-top: -280px;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 200px 0 50px;
+    background: url(../images/footer/bg-2-footer.png) no-repeat top left/cover;
   }
 }
 .footer .container {
@@ -597,6 +597,11 @@ body {
 .item-description .swiper .wrapper .text .order-btn:hover {
   transform: scale(1.02);
   background: #000;
+}
+@media (max-width: 767px) {
+  .item-description .swiper .wrapper .text .order-btn {
+    font-size: 16px;
+  }
 }
 .item-description .swiper .swiper-button-prev {
   background: #239f7c;
@@ -1271,7 +1276,7 @@ body {
 }
 @media (max-width: 419px) {
   .directions .container .card-template2 .btn-contact {
-    font-size: 18px;
+    font-size: 14px;
     padding: 5px;
   }
 }
@@ -1469,6 +1474,11 @@ body {
   height: 400px;
   border: 10px solid #fff;
   border-radius: 50%;
+}
+@media (max-width: 767px) {
+  .menues .container .item-cardsa .menu-item::after {
+    height: 260px;
+  }
 }
 .menues .container .item-cardsa .menu-3 .qntty,
 .menues .container .item-cardsa .menu-2 .qntty {

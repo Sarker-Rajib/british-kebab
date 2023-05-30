@@ -139,6 +139,10 @@
                         transform: scale(1.02);
                         background: #000;
                     }
+
+                    @media(max-width: 767px) {
+                        font-size: 16px;
+                    }
                 }
             }
         }
